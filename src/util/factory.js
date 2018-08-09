@@ -156,7 +156,7 @@ const FileName = function (url) {
     var match = search.exec(decodeURIComponent(url.replace(/\+/g, " ")));
     if (match != null) {
         var str = match[1];
-        return str;
+        return str.replace('.csv', '');
     }
     return url;
 }
