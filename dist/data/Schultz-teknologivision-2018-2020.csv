@@ -1,0 +1,157 @@
+name,ring,quadrant,isNew,description
+Kanban/Scrumban,adopter,teknikker,FALSE,"<ul>
+<li>Mindre fokus på rituelle møder og dermed passer det bedre på produktudvikling, hvor produktet er i produktion.</li>
+</ul>"
+Det agile nirvana,adopter,teknikker,TRUE,TODO
+MicroServices,adopter,teknikker,FALSE,"<ul>
+<li>Mere vedligeholdelsesvenlig arkitektur</li>
+</ul>"
+Business Intelligence,adopter,teknikker,TRUE,"<ul>
+<li>Større indsigt i data</li>
+<li>Beslutningsstøtte</li>
+<li>Ledelsesinformation</li>
+</ul>"
+Advanced analytics,adopter,teknikker,TRUE,"<ul>
+<li>Større indsigt i data</li>
+<li>Beslutningsstøtte</li>
+<li>Forudsigelse af fremtidige situationer baseret på mønstre i historiske data.</li>
+</ul>
+"
+Test på passende niveau,adopter,teknikker,TRUE,TODO
+Scrum,fasthold,teknikker,FALSE,"<ul><li>Hurtigere time-to-market</li><li>Bedre risikostyring</li><li>Bedre værdistyring</li><li>Større indsigt</li></ul>
+"
+Devops,fasthold,teknikker,FALSE,<ul><li>Stabile idriftsættelser</li><li>Forbedrer interaktion mellem IT Drift og udvikling</li><li>Gør vores løsninger driftsbare</li></ul>
+ADFS/Føderet sikkerhed,fasthold,teknikker,FALSE,<ul><li>Bedre sikkerhedsmodel med centraliseret bruger/rolle styring</li></ul>
+Applikationssikkerhed,fasthold,teknikker,FALSE,"<ul>
+<li>Mere sikre løsninger bliver vigtigt i konkurrencesituationer</li>
+<li>Undgå at lække data</li>
+</ul>"
+Instrumentering,fasthold,teknikker,FALSE,"<ul>
+<li>Bedre overvågning af applikationer</li>
+<li>Mere viden om hvordan brugerne bruger løsningerne.</li>
+</ul>
+"
+Microsoft TFS Version control,afvikl,værktøjer,TRUE,"<ul>
+<li>Vi benytter i stedet distribueret versionsstyring som Git.</li>
+</ul>"
+TFS,fasthold,værktøjer,FALSE,"<ul>
+<li>Samarbejdsværktøj til softwareprojekter, som bruges til at designe, udvikle og bygge løsninger.</li>
+</ul>
+"
+Git,fasthold,værktøjer,FALSE,"<ul>
+<li>High performance distribueret versionsstyringssystem
+<li>Understøtter agile workflows med gated checkins (gennem pull requests)
+</ul>"
+Visual Studio,fasthold,værktøjer,FALSE,"<ul>
+<li>IDE til udvikling af .Net løsninger</li>
+</ul>"
+Xamarin,fasthold,værktøjer,FALSE,"<ul>
+<li>Værktøj til .Net udvikling af Cross platform mobile apps.</li>
+<li>Applikationer kompileres til native apps, som giver naturlig look-and-feel.</li>
+</ul>"
+Centraliseret Logning (ELK),fasthold,værktøjer,FALSE,"<ul>
+<li>Giver mere effektiv fejlfindings- og vedligeholdelsesmuligheder i applikationer ved at konsolidere alle log-filer i en central platform. </li>
+<li>Logs kan udsøges og monitoreres.</li>
+</ul>"
+Octopus deploy,fasthold,værktøjer,FALSE,"<ul>
+<li>Automatiseret deployment som understøtter continuos delivery. </li>
+</ul>"
+UNIT test,fasthold,værktøjer,FALSE,"<ul>
+<li>Test af individuelle enheder i softwaren</li>
+<li>Giver tryghed i forhold til kvalitet af softwaren </li>
+</ul>"
+Eget nuget feed,adopter,værktøjer,FALSE,"<ul>
+<li>Nuget feed til publicering af egne komponenter, så de kan refereres binært i korrekte versioner.</li>
+<li>Hver komponent vil dermed få sit eget lifecycle management.</li>
+</ul>"
+Javascript unit test,adopter,værktøjer,FALSE,TODO
+Microsoft VSTS,adopter,værktøjer,FALSE,TODO
+Microsoft Service bus,afvikl,sprog og frameworks,FALSE,"<ul>
+<li>Microsoft ser ud til at have forladt understøttelse af on-premise installationer, da de ikke har meldt noget konkret ud siden 2013.</li>
+</ul>"
+Windows Workflow Foundation,afvikl,sprog og frameworks,FALSE,"<ul>
+<li>Windows Worflow foundation giver mening, når der er tale om komplekse workflows. I de fleste tilfælde vi det dog være overkill, da vi ikke i vores løsninger har 1) processer der ændres ofte og 2) grafisk understøttelse af designprocessen.</li>
+</ul>"
+AngularJS,afvikl,sprog og frameworks,FALSE,"<ul>
+<li>Web UI framework til implementering af dynamiske webløsninger.</li>
+</ul>"
+.Net,fasthold,sprog og frameworks,FALSE,"<ul>
+<li>Markedsledende programmeringssprog /framework til implementering af IT løsninger. </li>
+<li>Giver fremtidssikrede løsninger, der er vedligeholdelsesvenlige</li>
+</ul>"
+.NET CORE,fasthold,sprog og frameworks,TRUE,"<ul>
+<li>Fremadrettet default ”framework” til udvikling af .Net løsninger.</li>
+<li>Cross platform (Windows, Linux og Mac)</li>
+<li>Kan bruges i container sammenhænge (fx Docker)</li>
+</ul>"
+ASP.NET MVC / WEB API,fasthold,sprog og frameworks,FALSE,"<ul>
+<li>Markedsledende Web framework til implementering af webløsninger. Har reelt erstattet det oprindelige ASP.NET Webforms.</li>
+<li>Giver fremtidssikrede løsninger, der er vedligeholdelsesvenlige.</li>
+</ul>"
+Entity Framework,fasthold,sprog og frameworks,FALSE,"<ul>
+<li>ORM der gør det nemmere at programmere og vedligeholde dataadgang-laget.</li>
+</ul>"
+SignalR,fasthold,sprog og frameworks,FALSE,"<ul>
+<li>Nemmere implementering af real-time kommunikation på web-løsninger</li>
+</ul>"
+Typescript/ECMASCRIPT 2015,fasthold,sprog og frameworks,FALSE,"<ul>
+<li>Typescript er et superset af JavaScript, der blandt andet giver typer og interfaces.  </li>
+<li>Her er valgt at beskrive begge sprog, Typescript kan betragtes som en form for Ecmascript++.</li>
+<li>Typescript giver en mere sikker udviklingsproces grundet typesikkerhed.</li>
+</ul>"
+Hangfire,fasthold,sprog og frameworks,FALSE,"<ul>
+<li>Nem og hurtig måde at håndtere tilbagevendende eller adhoc jobs</li>
+<li>Kan til simple scenarier benyttes som et internt kø-system (simpel form for message broker) eller en workflow engine.</li>
+<li>Gør det nemt at distribuere afvikling af jobs.</li>
+<li>Inkluderer dashboard til fx overvågning og håndtering af fejl.</li>
+</ul>"
+ReactJS,fasthold,sprog og frameworks,FALSE,"<ul>
+<li>Web UI framework til implementering af dynamiske webløsninger.</li>
+</ul>"
+RABBITMQ,fasthold,sprog og frameworks,TRUE,"<ul>
+<li>Open source message middleware til fx at sende beskeder mellem komponenter i en IT løsning.</li>
+<li>Kan deployes både on-premise og i cloud.</li>
+<li>Erstatter Microsoft Servicebus</li>
+</ul>"
+Workflow Engine,adopter,sprog og frameworks,FALSE,"<ul>
+<li>Nemmere understøttelse af sagsgange i projekter og produkter</li>
+<li>Hurtigere time-to-market på sags- og dokumentløsninger, hvor der er sagsgange involveret.</li>
+</ul>"
+Schultz standard UI identitet,adopter,sprog og frameworks,FALSE,"<ul>
+<li>En fælles identitet i brugergrænsefladen, som vil give genkendelighed på tværs af produkter.</li>
+<li>Genbrugelighed af web-komponenter mellem produkter.</li>
+<li>Bygget på fælles design system</li>
+</ul>"
+Ant.Design,adopter,sprog og frameworks,TRUE,"<ul>
+<li>Et fælles design system, som giver os mulighed for at udvikler en standard UI-identitet</li>
+<li>Mulighed for genbrugelige UI komponenter</li>
+</ul>"
+Apache Solr,afvikl,platforme og komponenter,TRUE,"<ul><li>SOLR er brugt som søgeplatform i Fundament. SOLR fungerer fint til dette formål, men fremadrettet er vores strategiske valg Elastic Search. </li></ul>"
+Azure SERVICES,fasthold,platforme og komponenter,FALSE,"<ul>
+<li>Cloud platform med stort udvalg af Cloud-services, som kan give hurtigere Time-to-market af produkter og projekter.</li>
+<li>Der kan være udfordringer med systemer, som er underlagt krigsreglen.</li>
+</ul>"
+Dynamics CRM,fasthold,platforme og komponenter,FALSE,"<ul>
+<li>Fasit er bygget på CRM 2011. Vi fastholder derfor denne teknologi indtil vi har udfaset Fasits brug af CRM.</li>
+<li>Vi bør overveje brugen af Dynamics CRM som platform til mindre fagsystemer/ IT projekter.</li>
+<li>Microsofts cloud/on-premise strategi for Dynamics CRM skal monitoreres.</li>
+</ul>"
+Elastic Search / ELK stakken,fasthold,platforme og komponenter,FALSE,"<ul>
+<li>Søgning er en væsentlig del af IT-løsninger i dag, hvor søgning og kunstig intelligens smelter sammen. </li>
+<li>ELK er en skalerbar open source søge- og analytics platform, som giver indsigt i data.</li>
+</ul>"
+AZURE Cognitive services,fasthold,platforme og komponenter,FALSE,"<ul>
+<li>AI cloud platform med stort udvalg af services, som kan levere hurtig værdi.</li>
+<li>Der kan være udfordringer med systemer, som er underlagt krigsreglen.</li>
+</ul>"
+Docker,adopter,platforme og komponenter,FALSE,"<ul>
+<li>Container platform til fx microservices</li>
+<li>Muliggør Infrastructure-as-code</li>
+<li>Nemmere idriftsættelse</li>
+</ul>"
+Kubernetes,adopter,platforme og komponenter,FALSE,"<ul>
+<li>Orkestrering af containers</li>
+<li>Automatiseret deployment</li>
+<li>Automatiseret skalering</li>
+<li>Management af containers</li>
+</ul>"
