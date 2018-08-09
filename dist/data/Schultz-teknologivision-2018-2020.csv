@@ -56,7 +56,7 @@ Centraliseret Logning (ELK),fasthold,værktøjer,FALSE,"<ul>
 Octopus deploy,fasthold,værktøjer,FALSE,"<ul>
 <li>Automatiseret deployment som understøtter continuos delivery. </li>
 </ul>"
-UNIT test,fasthold,værktøjer,FALSE,"<ul>
+UNIT test,fasthold,teknikker,FALSE,"<ul>
 <li>Test af individuelle enheder i softwaren</li>
 <li>Giver tryghed i forhold til kvalitet af softwaren </li>
 </ul>"
@@ -90,6 +90,7 @@ ASP.NET MVC / WEB API,fasthold,sprog og frameworks,FALSE,"<ul>
 </ul>"
 Entity Framework,fasthold,sprog og frameworks,FALSE,"<ul>
 <li>ORM der gør det nemmere at programmere og vedligeholde dataadgang-laget.</li>
+<li>Vi bruger Code First som metode</li>
 </ul>"
 SignalR,fasthold,sprog og frameworks,FALSE,"<ul>
 <li>Nemmere implementering af real-time kommunikation på web-løsninger</li>
@@ -122,7 +123,7 @@ Schultz standard UI identitet,adopter,sprog og frameworks,FALSE,"<ul>
 <li>Genbrugelighed af web-komponenter mellem produkter.</li>
 <li>Bygget på fælles design system</li>
 </ul>"
-Ant.Design,adopter,sprog og frameworks,TRUE,"<ul>
+Material UI,adopter,sprog og frameworks,TRUE,"<ul>
 <li>Et fælles design system, som giver os mulighed for at udvikler en standard UI-identitet</li>
 <li>Mulighed for genbrugelige UI komponenter</li>
 </ul>"
@@ -155,3 +156,6 @@ Kubernetes,adopter,platforme og komponenter,FALSE,"<ul>
 <li>Automatiseret skalering</li>
 <li>Management af containers</li>
 </ul>"
+Visual Studio Code,fasthold,værktøjer,TRUE,TODO
+Automatiseret UI test,adopter,teknikker,TRUE,TODO
+Styled components,adopter,teknikker,TRUE,"TODO: Styled Components (eller find ud af hvilken passende frontend styling der vil være mest fremsynet de næste 2 år (ren css, bem, css-in-js, styled components)."
