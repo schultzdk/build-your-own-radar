@@ -8,6 +8,8 @@ const args = require('yargs').argv;
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
 let isProd = args.prod;
 let isDev = args.dev;
 
@@ -32,7 +34,10 @@ let plugins = [
         chunks: ['common'],
         inject: 'body',
         filename: 'error.html'
-    })
+    }),
+    new CopyWebpackPlugin([
+        { from: 'data', to: 'data' }
+    ]),
 ];
 
 if (isProd) {
