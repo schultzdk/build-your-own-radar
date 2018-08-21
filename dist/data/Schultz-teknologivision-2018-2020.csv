@@ -2,9 +2,15 @@ name,ring,quadrant,isNew,description
 Kanban/Scrumban,adopter,teknikker,FALSE,"<ul>
 <li>Mindre fokus på rituelle møder og dermed passer det bedre på produktudvikling, hvor produktet er i produktion.</li>
 </ul>"
-Det agile nirvana,adopter,teknikker,TRUE,TODO
+Det agile nirvana,adopter,teknikker,TRUE,"<ul>
+<li>En samling teknikker som skal gøre os bedre til hyppigt og forudsigeligt at levere kvalitetssoftware til glæde for vores kunder.</li>
+<li>Første skridt på vejen er introduktion af Continous Delivery</li>
+</ul>"
 MicroServices,adopter,teknikker,FALSE,"<ul>
 <li>Mere vedligeholdelsesvenlig arkitektur</li>
+<li>Nemmere at opdele og parallelisere arbejde</li>
+<li>Nemmere skalering</li>
+<li>Sværere at styre fx transaktioner på tværs</li>
 </ul>"
 Business Intelligence,adopter,teknikker,TRUE,"<ul>
 <li>Større indsigt i data</li>
@@ -17,7 +23,11 @@ Advanced analytics,adopter,teknikker,TRUE,"<ul>
 <li>Forudsigelse af fremtidige situationer baseret på mønstre i historiske data.</li>
 </ul>
 "
-Test på passende niveau,adopter,teknikker,TRUE,TODO
+Test på passende niveau,adopter,teknikker,TRUE,"<ul>
+<li>Test så tæt på koden som muligt</li>
+<li>Test af high-level kritisk funktionalitet</li>
+<li>Mest fokus på unit, komponent og integrationtest</li>
+</ul>"
 Scrum,fasthold,teknikker,FALSE,"<ul><li>Hurtigere time-to-market</li><li>Bedre risikostyring</li><li>Bedre værdistyring</li><li>Større indsigt</li></ul>
 "
 Devops,fasthold,teknikker,FALSE,<ul><li>Stabile idriftsættelser</li><li>Forbedrer interaktion mellem IT Drift og udvikling</li><li>Gør vores løsninger driftsbare</li></ul>
@@ -64,8 +74,16 @@ Eget nuget feed,adopter,værktøjer,FALSE,"<ul>
 <li>Nuget feed til publicering af egne komponenter, så de kan refereres binært i korrekte versioner.</li>
 <li>Hver komponent vil dermed få sit eget lifecycle management.</li>
 </ul>"
-Javascript unit test,adopter,værktøjer,FALSE,TODO
-Microsoft VSTS,adopter,værktøjer,FALSE,TODO
+Javascript unit test,adopter,værktøjer,FALSE,"<ul>
+<li>Ligesom backend kode skal frontend kode unit testes</li>
+<li>Giver tryghed i forhold til kvaliteten af softwaren</li>
+</ul>"
+Microsoft VSTS,adopter,værktøjer,TRUE,"<ul>
+<li>Cloud hosted TFS</li>
+<li>Gode integrationer med Azure og anden cloud</li>
+<li>Nem at opsætte CI og CD</li>
+<li>Altid up-to-date med nyeste funktionalitet</li>
+</ul>"
 Microsoft Service bus,afvikl,sprog og frameworks,FALSE,"<ul>
 <li>Microsoft ser ud til at have forladt understøttelse af on-premise installationer, da de ikke har meldt noget konkret ud siden 2013.</li>
 </ul>"
@@ -156,6 +174,18 @@ Kubernetes,adopter,platforme og komponenter,FALSE,"<ul>
 <li>Automatiseret skalering</li>
 <li>Management af containers</li>
 </ul>"
-Visual Studio Code,fasthold,værktøjer,TRUE,TODO
+Visual Studio Code,fasthold,værktøjer,TRUE,"<ul>
+<li>Lightweight IDE</li>
+</ul>"
 Automatiseret UI test,adopter,teknikker,TRUE,TODO
 Styled components,adopter,teknikker,TRUE,"TODO: Styled Components (eller find ud af hvilken passende frontend styling der vil være mest fremsynet de næste 2 år (ren css, bem, css-in-js, styled components)."
+BotXO,adopter,sprog og frameworks,TRUE,"<ul>
+<li>Vores strategiske valg på chatbot løsning</li>
+<li>Komplet chatbot løsning som kan fødes med indhold og dermed svare på spørgsmål</li>
+<li>Integrations- og customiseringsmulighederne er pt (aug 2018) ikke undersøgt i detaljer</li>
+</ul>"
+Microsoft Bot Framework,adopter,sprog og frameworks,TRUE,"<ul>
+<li>Generisk bot framework til understøttelse af maskine-menneske samtale</li>
+<li>Kan integreres i web, Skype, Teams etc</li>
+<li>Kan deployes i Azure Cloud</li>
+</ul>"
