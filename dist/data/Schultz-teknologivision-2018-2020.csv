@@ -1,6 +1,7 @@
 name,ring,quadrant,isNew,description
 Kanban/Scrumban,adopter,teknikker,FALSE,"<ul>
 <li>Mindre fokus på rituelle møder og dermed passer det bedre på produktudvikling, hvor produktet er i produktion.</li>
+<li>Vi skal bruge enten Scrumban eller en tilpasset form for agil udviklingsmetode</li>
 </ul>"
 Det agile nirvana,adopter,teknikker,TRUE,"<ul>
 <li>En samling teknikker som skal gøre os bedre til hyppigt og forudsigeligt at levere kvalitetssoftware til glæde for vores kunder.</li>
@@ -21,38 +22,45 @@ Advanced analytics,adopter,teknikker,TRUE,"<ul>
 <li>Større indsigt i data</li>
 <li>Beslutningsstøtte</li>
 <li>Forudsigelse af fremtidige situationer baseret på mønstre i historiske data.</li>
-</ul>
-"
+</ul>"
 Test på passende niveau,adopter,teknikker,TRUE,"<ul>
 <li>Test så tæt på koden som muligt</li>
 <li>Test af high-level kritisk funktionalitet</li>
 <li>Mest fokus på unit, komponent og integrationtest</li>
 </ul>"
-Scrum,fasthold,teknikker,FALSE,"<ul><li>Hurtigere time-to-market</li><li>Bedre risikostyring</li><li>Bedre værdistyring</li><li>Større indsigt</li></ul>
-"
-Devops,fasthold,teknikker,FALSE,<ul><li>Stabile idriftsættelser</li><li>Forbedrer interaktion mellem IT Drift og udvikling</li><li>Gør vores løsninger driftsbare</li></ul>
-ADFS/Føderet sikkerhed,fasthold,teknikker,FALSE,<ul><li>Bedre sikkerhedsmodel med centraliseret bruger/rolle styring</li></ul>
+Scrum,fasthold,teknikker,FALSE,"<ul><li>Hurtigere time-to-market</li><li>Bedre risikostyring</li><li>Bedre værdistyring</li><li>Større indsigt</li></ul>"
+Devops,fasthold,teknikker,FALSE,"<ul>
+<li>Siden 2012 har vi benyttet devops til at lette kommunikationen mellem udvikling og IT drift samt til at varetage fælles udviklingsværktøjer og infrastruktur. Devops kulturen giver stor værdi, da det modner vores projekter og produkter til idriftsættelse samt sikrer, at vi har fokus på fælles udviklings-, build- og deployment værktøjer. </li>
+<li>Stabile idriftsættelser</li><li>Forbedrer interaktion mellem IT Drift og udvikling</li>
+<li>Gør vores løsninger driftsbare</li>
+</ul>"
+ADFS/Føderet sikkerhed,fasthold,teknikker,FALSE,"<ul>
+<li>Fødereret sikkerhed giver stor værdi, da det giver vores produkter centraliseret autentificering og autorisering. Vi har bygget egen sikkerhedskomponent, som tilbyder en fødereret sikkerhedsmodel med Single-Sign-On med ADFS og NemLog-in. </li>
+<li>Bedre sikkerhedsmodel med centraliseret bruger/rolle styring</li>
+</ul>"
 Applikationssikkerhed,fasthold,teknikker,FALSE,"<ul>
+<li>Det rette niveau af sikkerhed i løsningerne bliver mere og mere vigtig. Der har i Danmark været eksempler på grove sikkerhedshuller, som har medført læk af persondata. Det er vigtigt, at vi bevarer vores nuværende viden om Applikationssikkerhed, så vi fortsat kan levere sikre løsninger til vores kunder. Vi skal konstant være ajour med de nyeste trusler på applikationsniveau og følge med i OWASP arbejdet.</li>
 <li>Mere sikre løsninger bliver vigtigt i konkurrencesituationer</li>
 <li>Undgå at lække data</li>
 </ul>"
 Instrumentering,fasthold,teknikker,FALSE,"<ul>
+<li>For at gøre vores løsninger nemme at vedligeholde, er det vigtigt at de bliver instrumenteret. Instrumentering giver mulighed for, at vi kan følge eksekveringen af koden og finde frem til, hvad der er sket i applikationen samt hvornår og hvordan fejl opstår. </li>
 <li>Bedre overvågning af applikationer</li>
 <li>Mere viden om hvordan brugerne bruger løsningerne.</li>
-</ul>
-"
+</ul>"
 Microsoft TFS Version control,afvikl,værktøjer,TRUE,"<ul>
 <li>Vi benytter i stedet distribueret versionsstyring som Git.</li>
 </ul>"
 TFS,fasthold,værktøjer,FALSE,"<ul>
+<li>Vi fortsætter med at bruge on-premise TFS, da en del af vores kunder kræver dette (specielt på IT-projekter). Det er dog vigtigt at understrege, at der sker en generel bevægelse i industrien mod SaaS og Cloud, hvilket betyder at vi skal begynde at overveje VSTS fremadrettet.</li>
 <li>Samarbejdsværktøj til softwareprojekter, som bruges til at designe, udvikle og bygge løsninger.</li>
-</ul>
-"
+</ul>"
 Git,fasthold,værktøjer,FALSE,"<ul>
 <li>High performance distribueret versionsstyringssystem
 <li>Understøtter agile workflows med gated checkins (gennem pull requests)
 </ul>"
 Visual Studio,fasthold,værktøjer,FALSE,"<ul>
+<li>Visual Studio giver fortsat enorm værdi, men også mere light weight IDE'er som Visual Studio Code er vigtige at have i værktøjskassen fremadrettet.</li>
 <li>IDE til udvikling af .Net løsninger</li>
 </ul>"
 Xamarin,fasthold,værktøjer,FALSE,"<ul>
@@ -60,13 +68,14 @@ Xamarin,fasthold,værktøjer,FALSE,"<ul>
 <li>Applikationer kompileres til native apps, som giver naturlig look-and-feel.</li>
 </ul>"
 Centraliseret Logning (ELK),fasthold,værktøjer,FALSE,"<ul>
+<li>ELK - Elastic Search + Log Stash + Kibana giver en enorm værdi i at kunne fejlsøge og vedligeholde et system i produktion. Dette vil der fortsat være behov for og ELK vil være værktøjet vi bruger til dette. </li>
 <li>Giver mere effektiv fejlfindings- og vedligeholdelsesmuligheder i applikationer ved at konsolidere alle log-filer i en central platform. </li>
 <li>Logs kan udsøges og monitoreres.</li>
 </ul>"
 Octopus deploy,fasthold,værktøjer,FALSE,"<ul>
 <li>Automatiseret deployment som understøtter continuos delivery. </li>
 </ul>"
-UNIT test,fasthold,teknikker,FALSE,"<ul>
+Unit test,fasthold,teknikker,FALSE,"<ul>
 <li>Test af individuelle enheder i softwaren</li>
 <li>Giver tryghed i forhold til kvalitet af softwaren </li>
 </ul>"
@@ -97,12 +106,12 @@ AngularJS,afvikl,sprog og frameworks,FALSE,"<ul>
 <li>Markedsledende programmeringssprog /framework til implementering af IT løsninger. </li>
 <li>Giver fremtidssikrede løsninger, der er vedligeholdelsesvenlige</li>
 </ul>"
-.NET CORE,fasthold,sprog og frameworks,TRUE,"<ul>
+.Net Core,fasthold,sprog og frameworks,TRUE,"<ul>
 <li>Fremadrettet default ”framework” til udvikling af .Net løsninger.</li>
 <li>Cross platform (Windows, Linux og Mac)</li>
 <li>Kan bruges i container sammenhænge (fx Docker)</li>
 </ul>"
-ASP.NET MVC / WEB API,fasthold,sprog og frameworks,FALSE,"<ul>
+Asp.Net MVC / Web API,fasthold,sprog og frameworks,FALSE,"<ul>
 <li>Markedsledende Web framework til implementering af webløsninger. Har reelt erstattet det oprindelige ASP.NET Webforms.</li>
 <li>Giver fremtidssikrede løsninger, der er vedligeholdelsesvenlige.</li>
 </ul>"
@@ -113,7 +122,7 @@ Entity Framework,fasthold,sprog og frameworks,FALSE,"<ul>
 SignalR,fasthold,sprog og frameworks,FALSE,"<ul>
 <li>Nemmere implementering af real-time kommunikation på web-løsninger</li>
 </ul>"
-Typescript/ECMASCRIPT 2015,fasthold,sprog og frameworks,FALSE,"<ul>
+Typescript/Ecmascript 2015,fasthold,sprog og frameworks,FALSE,"<ul>
 <li>Typescript er et superset af JavaScript, der blandt andet giver typer og interfaces.  </li>
 <li>Her er valgt at beskrive begge sprog, Typescript kan betragtes som en form for Ecmascript++.</li>
 <li>Typescript giver en mere sikker udviklingsproces grundet typesikkerhed.</li>
@@ -127,7 +136,7 @@ Hangfire,fasthold,sprog og frameworks,FALSE,"<ul>
 ReactJS,fasthold,sprog og frameworks,FALSE,"<ul>
 <li>Web UI framework til implementering af dynamiske webløsninger.</li>
 </ul>"
-RABBITMQ,fasthold,sprog og frameworks,TRUE,"<ul>
+RabbitMQ,fasthold,sprog og frameworks,TRUE,"<ul>
 <li>Open source message middleware til fx at sende beskeder mellem komponenter i en IT løsning.</li>
 <li>Kan deployes både on-premise og i cloud.</li>
 <li>Erstatter Microsoft Servicebus</li>
@@ -138,15 +147,15 @@ Workflow Engine,adopter,sprog og frameworks,FALSE,"<ul>
 </ul>"
 Schultz standard UI identitet,adopter,sprog og frameworks,FALSE,"<ul>
 <li>En fælles identitet i brugergrænsefladen, som vil give genkendelighed på tværs af produkter.</li>
-<li>Genbrugelighed af web-komponenter mellem produkter.</li>
+<li>Mulighed for at kunne genbruge visuelle web-komponenter mellem produkter.</li>
 <li>Bygget på fælles design system</li>
 </ul>"
 Material UI,adopter,sprog og frameworks,TRUE,"<ul>
-<li>Et fælles design system, som giver os mulighed for at udvikler en standard UI-identitet</li>
+<li>Et fælles design system, som giver os mulighed for at udvikle en standard UI-identitet</li>
 <li>Mulighed for genbrugelige UI komponenter</li>
 </ul>"
 Apache Solr,afvikl,platforme og komponenter,TRUE,"<ul><li>SOLR er brugt som søgeplatform i Fundament. SOLR fungerer fint til dette formål, men fremadrettet er vores strategiske valg Elastic Search. </li></ul>"
-Azure SERVICES,fasthold,platforme og komponenter,FALSE,"<ul>
+Azure Services,fasthold,platforme og komponenter,FALSE,"<ul>
 <li>Cloud platform med stort udvalg af Cloud-services, som kan give hurtigere Time-to-market af produkter og projekter.</li>
 <li>Der kan være udfordringer med systemer, som er underlagt krigsreglen.</li>
 </ul>"
@@ -159,16 +168,19 @@ Elastic Search / ELK stakken,fasthold,platforme og komponenter,FALSE,"<ul>
 <li>Søgning er en væsentlig del af IT-løsninger i dag, hvor søgning og kunstig intelligens smelter sammen. </li>
 <li>ELK er en skalerbar open source søge- og analytics platform, som giver indsigt i data.</li>
 </ul>"
-AZURE Cognitive services,fasthold,platforme og komponenter,FALSE,"<ul>
+Azure Cognitive services,fasthold,platforme og komponenter,FALSE,"<ul>
 <li>AI cloud platform med stort udvalg af services, som kan levere hurtig værdi.</li>
 <li>Der kan være udfordringer med systemer, som er underlagt krigsreglen.</li>
 </ul>"
 Docker,adopter,platforme og komponenter,FALSE,"<ul>
+<li>Den store fordel ved Docker og containere er, at man virtualiserer operativssystemet på en ny og mere effektiv måde.</li>
+<li>En anden fordel er at 
 <li>Container platform til fx microservices</li>
 <li>Muliggør Infrastructure-as-code</li>
 <li>Nemmere idriftsættelse</li>
 </ul>"
 Kubernetes,adopter,platforme og komponenter,FALSE,"<ul>
+<li>Giver os mulighed for deploye containere på et cluster af maskiner.</li>
 <li>Orkestrering af containers</li>
 <li>Automatiseret deployment</li>
 <li>Automatiseret skalering</li>
@@ -177,12 +189,17 @@ Kubernetes,adopter,platforme og komponenter,FALSE,"<ul>
 Visual Studio Code,fasthold,værktøjer,TRUE,"<ul>
 <li>Lightweight IDE</li>
 </ul>"
-Automatiseret UI test,adopter,teknikker,TRUE,TODO
-Styled components,adopter,teknikker,TRUE,"TODO: Styled Components (eller find ud af hvilken passende frontend styling der vil være mest fremsynet de næste 2 år (ren css, bem, css-in-js, styled components)."
+Automatiseret UI test,adopter,teknikker,TRUE,"<ul>
+<li>Giver mulighed for at reducere behovet for manuel test, som er ressourcekrævende</li>
+<li>En naturlig opstart vil være at automatisere regressionstests som vil kunne genkøres efter hvert release.</li>
+</ul>"
+Styled components,adopter,teknikker,TRUE,"<ul>
+<li>TODO: Styled Components (eller find ud af hvilken passende frontend styling der vil være mest fremsynet de næste 2 år (ren css, bem, css-in-js, styled components).</li>
+</ul>"
 BotXO,adopter,sprog og frameworks,TRUE,"<ul>
 <li>Vores strategiske valg på chatbot løsning</li>
 <li>Komplet chatbot løsning som kan fødes med indhold og dermed svare på spørgsmål</li>
-<li>Integrations- og customiseringsmulighederne er pt (aug 2018) ikke undersøgt i detaljer</li>
+<li>Integrations- og customiseringsmulighederne er pt (sep 2018) ikke undersøgt i detaljer</li>
 </ul>"
 Microsoft Bot Framework,adopter,sprog og frameworks,TRUE,"<ul>
 <li>Generisk bot framework til understøttelse af maskine-menneske samtale</li>
