@@ -1,5 +1,13 @@
 ## How to use
 
+Make changes in code and data
+
+    $ npm run build
+
+Commit and push to origin/master
+
+The azure site on https://schultz-teknologivision.azurewebsites.net/ will automatically fetch the new build from github
+
 ### Deploy as container in Azure
 
 https://docs.microsoft.com/en-us/azure/container-instances/container-instances-tutorial-prepare-app
