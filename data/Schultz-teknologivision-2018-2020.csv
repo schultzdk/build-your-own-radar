@@ -1,5 +1,13 @@
 name,ring,quadrant,isNew,description
-Kanban/Scrumban,adopter,teknikker,FALSE,"<ul>
+Scrum,fasthold,teknikker,FALSE,"<ul>
+<li>Vi fastholder Scrum som udviklingsmetode, da den fortsat giver stor værdi</li>
+<li>Når en løsning er sat i drift, så kan det være svært at arbejde med commitments, da de kan være udfordret af drifts og supporthændelser. Derfor er vi nødt til at tilpasse vanilla scrum til vores situation.</li>
+<li>Hurtigere time-to-market</li>
+<li>Bedre risikostyring</li>
+<li>Bedre værdistyring</li>
+<li>Større indsigt</li>
+</ul>"
+Kanban,adopter,teknikker,FALSE,"<ul>
 <li>Mindre fokus på rituelle møder og dermed passer det bedre på produktudvikling, hvor produktet er i produktion.</li>
 <li>Vi skal bruge enten Scrumban eller en tilpasset form for agil udviklingsmetode</li>
 </ul>"
@@ -15,6 +23,7 @@ MicroServices,adopter,teknikker,FALSE,"<ul>
 </ul>"
 Business Intelligence,adopter,teknikker,TRUE,"<ul>
 <li>Større indsigt i data</li>
+<li>Datadrevne beslutninger</li>
 <li>Beslutningsstøtte</li>
 <li>Ledelsesinformation</li>
 </ul>"
@@ -27,8 +36,13 @@ Test på passende niveau,adopter,teknikker,TRUE,"<ul>
 <li>Test så tæt på koden som muligt</li>
 <li>Test af high-level kritisk funktionalitet</li>
 <li>Mest fokus på unit, komponent og integrationtest</li>
+<li>Test as code</li>
 </ul>"
-Scrum,fasthold,teknikker,FALSE,"<ul><li>Hurtigere time-to-market</li><li>Bedre risikostyring</li><li>Bedre værdistyring</li><li>Større indsigt</li></ul>"
+Test først,adopter, teknikker,TRUE,"<ul>
+<li>Ikke nødvendigvis Test-Driven-Development, men en indstilling om at test tænkes ind fra starten af.</li>
+<li>Test design er lavet inden en User story planlægges ind</li>
+<li>Test case skrives på overskriftsniveau samtidigt med at User story nedbrydes</li> 
+</ul>"
 Devops,fasthold,teknikker,FALSE,"<ul>
 <li>Siden 2012 har vi benyttet devops til at lette kommunikationen mellem udvikling og IT drift samt til at varetage fælles udviklingsværktøjer og infrastruktur. Devops kulturen giver stor værdi, da det modner vores projekter og produkter til idriftsættelse samt sikrer, at vi har fokus på fælles udviklings-, build- og deployment værktøjer. </li>
 <li>Stabile idriftsættelser</li><li>Forbedrer interaktion mellem IT Drift og udvikling</li>
@@ -39,7 +53,8 @@ ADFS/Føderet sikkerhed,fasthold,teknikker,FALSE,"<ul>
 <li>Bedre sikkerhedsmodel med centraliseret bruger/rolle styring</li>
 </ul>"
 Applikationssikkerhed,fasthold,teknikker,FALSE,"<ul>
-<li>Det rette niveau af sikkerhed i løsningerne bliver mere og mere vigtig. Der har i Danmark været eksempler på grove sikkerhedshuller, som har medført læk af persondata. Det er vigtigt, at vi bevarer vores nuværende viden om Applikationssikkerhed, så vi fortsat kan levere sikre løsninger til vores kunder. Vi skal konstant være ajour med de nyeste trusler på applikationsniveau og følge med i OWASP arbejdet.</li>
+<li>Det rette niveau af sikkerhed i løsningerne bliver mere og mere vigtig. Der har i Danmark været eksempler på grove sikkerhedshuller, som har medført læk af persondata. Det er vigtigt, at vi bevarer vores nuværende viden om Applikationssikkerhed, så vi fortsat kan levere sikre løsninger til vores kunder. </li>
+<li>Vi skal konstant være ajour med de nyeste trusler på applikationsniveau og følge med i OWASP arbejdet.</li>
 <li>Mere sikre løsninger bliver vigtigt i konkurrencesituationer</li>
 <li>Undgå at lække data</li>
 </ul>"
@@ -94,8 +109,8 @@ Microsoft VSTS,adopter,værktøjer,TRUE,"<ul>
 <li>Altid up-to-date med nyeste funktionalitet</li>
 </ul>"
 Microsoft Service bus,afvikl,sprog og frameworks,FALSE,"<ul>
-<li>Microsoft ser ud til at have forladt understøttelse af on-premise installationer, da de ikke har meldt noget konkret ud siden 2013.</li>
-</ul>"
+<li>Microsoft har ikke længere support for on-premise service bus for Windows Server pr. 9. januar 2018.</li>
+<li>Produktet er derfor reelt end-of-life og vores løsninger, som benytter Service bus skal benytte anden service bus implementering.</ul>"
 Windows Workflow Foundation,afvikl,sprog og frameworks,FALSE,"<ul>
 <li>Windows Worflow foundation giver mening, når der er tale om komplekse workflows. I de fleste tilfælde vi det dog være overkill, da vi ikke i vores løsninger har 1) processer der ændres ofte og 2) grafisk understøttelse af designprocessen.</li>
 </ul>"
@@ -123,7 +138,7 @@ SignalR,fasthold,sprog og frameworks,FALSE,"<ul>
 <li>Nemmere implementering af real-time kommunikation på web-løsninger</li>
 </ul>"
 Typescript/Ecmascript 2015,fasthold,sprog og frameworks,FALSE,"<ul>
-<li>Typescript er et superset af JavaScript, der blandt andet giver typer og interfaces.  </li>
+<li>Typescript er et superset af JavaScript, der blandt andet giver typer og interfaces. </li>
 <li>Her er valgt at beskrive begge sprog, Typescript kan betragtes som en form for Ecmascript++.</li>
 <li>Typescript giver en mere sikker udviklingsproces grundet typesikkerhed.</li>
 </ul>"
@@ -174,7 +189,7 @@ Azure Cognitive services,fasthold,platforme og komponenter,FALSE,"<ul>
 </ul>"
 Docker,adopter,platforme og komponenter,FALSE,"<ul>
 <li>Den store fordel ved Docker og containere er, at man virtualiserer operativssystemet på en ny og mere effektiv måde.</li>
-<li>En anden fordel er at 
+<li>En anden fordel er at der benyttes samme definition af applikationen og dens afhængigheder på tværs af miljøer - hele vejen fra udviklings- til produktionsmijøet.</li>
 <li>Container platform til fx microservices</li>
 <li>Muliggør Infrastructure-as-code</li>
 <li>Nemmere idriftsættelse</li>
@@ -205,4 +220,9 @@ Microsoft Bot Framework,adopter,sprog og frameworks,TRUE,"<ul>
 <li>Generisk bot framework til understøttelse af maskine-menneske samtale</li>
 <li>Kan integreres i web, Skype, Teams etc</li>
 <li>Kan deployes i Azure Cloud</li>
+</ul>"
+Trunk based development,adopter,teknikker,TRUE,"<ul>
+<li>Hjælper med at undgå merge helvede, fordi der ikke er long-lived udviklingsbranches</li>
+<li>Giver bedre mulighed for Continous Integration og Continous Deployment, da teamet committer til trunk-branch kontinuerligt</li>
+<li>Det er ikke nødvendigvis alle projekter, som vil have fordel af denne teknik, men som i stedet vil benytte andre branchingstrategier som fx GitFlow eller GithubFlow.</li>
 </ul>"
