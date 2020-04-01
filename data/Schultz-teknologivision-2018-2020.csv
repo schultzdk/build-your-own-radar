@@ -78,9 +78,12 @@ Visual Studio,fasthold,værktøjer,FALSE,"<ul>
 <li>Visual Studio giver fortsat enorm værdi, men også mere light weight IDE'er som Visual Studio Code er vigtige at have i værktøjskassen fremadrettet.</li>
 <li>IDE til udvikling af .Net løsninger</li>
 </ul>"
-Xamarin,fasthold,værktøjer,FALSE,"<ul>
-<li>Værktøj til .Net udvikling af Cross platform mobile apps.</li>
+Xamarin,afvikl,værktøjer,TRUE,"<ul>
+<li>Værktøj til udvikling Cross platform mobile apps.</li>
 <li>Applikationer kompileres til native apps, som giver naturlig look-and-feel.</li>
+</ul>"
+Google Flutter,adopter,værktøjer,TRUE,"<ul>
+<li></li>
 </ul>"
 Centraliseret Logning (ELK),fasthold,værktøjer,FALSE,"<ul>
 <li>ELK - Elastic Search + Log Stash + Kibana giver en enorm værdi i at kunne fejlsøge og vedligeholde et system i produktion. Dette vil der fortsat være behov for og ELK vil være værktøjet vi bruger til dette. </li>
