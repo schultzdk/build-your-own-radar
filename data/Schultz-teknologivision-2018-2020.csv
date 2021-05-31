@@ -66,9 +66,15 @@ Instrumentering,fasthold,teknikker,FALSE,"<ul>
 Microsoft TFS Version control,afvikl,værktøjer,TRUE,"<ul>
 <li>Vi benytter i stedet distribueret versionsstyring som Git.</li>
 </ul>"
-TFS,fasthold,værktøjer,FALSE,"<ul>
+TFS / Azure DevOps Server,fasthold,værktøjer,FALSE,"<ul>
 <li>Vi fortsætter med at bruge on-premise TFS, da en del af vores kunder kræver dette (specielt på IT-projekter). Det er dog vigtigt at understrege, at der sker en generel bevægelse i industrien mod SaaS og Cloud, hvilket betyder at vi skal begynde at overveje VSTS fremadrettet.</li>
 <li>Samarbejdsværktøj til softwareprojekter, som bruges til at designe, udvikle og bygge løsninger.</li>
+</ul>"
+Azure DevOps services,adopter, værktøjer,TRUE,"<ul>
+<li>Azure DevOps Server som en SaaS løsning.</li>
+<li>Developer services i cloud.</li>
+<li>Tæt integration med Azure</li>
+<li>Vi skal begynde at kigge på mulighederne for at gå fra on-premise til cloud-løsning</li>
 </ul>"
 Git,fasthold,værktøjer,FALSE,"<ul>
 <li>High performance distribueret versionsstyringssystem
